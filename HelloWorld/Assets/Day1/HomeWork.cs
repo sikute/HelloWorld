@@ -30,7 +30,7 @@ public class HomeWork : MonoBehaviour
 
             //Chu vi,dien tich hinh tam giac voi 3 canh a,b,c
             int P = a + b + c;
-            int p = P / 2;
+            float p = P / 2;
             Debug.Log("Chu vi, dien tich hinh tam giac:");
             Debug.Log(P);
             Debug.Log(Mathf.Sqrt(p*(p-a)*(p-b)*(p-c)));
