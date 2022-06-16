@@ -29,10 +29,10 @@ public class HomeWork : MonoBehaviour
             Debug.Log($"Trung binh cong: {(a + b + c + d) / 4}");
 
             //Chu vi,dien tich hinh tam giac voi 3 canh a,b,c
-            Debug.Log("Chu vi, dien tich hinh tam giac:");
             int P = a + b + c;
-            Debug.Log(P);
             int p = P / 2;
+            Debug.Log("Chu vi, dien tich hinh tam giac:");
+            Debug.Log(P);
             Debug.Log(Mathf.Sqrt(p*(p-a)*(p-b)*(p-c)));
 
             //Chu vi, dien tich hinh tron voi ban kinh R = 5, pi = 3.14
