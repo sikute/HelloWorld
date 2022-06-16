@@ -37,7 +37,6 @@ public class HomeWork : MonoBehaviour
 
             //Chu vi, dien tich hinh tron voi ban kinh R = 5, pi = 3.14
             Debug.Log("Chu vi, dien tich hinh tron:");
-
             Debug.Log((R*2)*pi);
             Debug.Log(Mathf.Pow(R,2) * pi);
 
