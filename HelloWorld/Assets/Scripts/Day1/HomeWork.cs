@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Day1.HomeWorks
-
+namespace SIRO.HomeWorks.Day1
 {
 
 public class HomeWork : MonoBehaviour
@@ -44,6 +43,5 @@ public class HomeWork : MonoBehaviour
             Debug.Log($"Van toc: {S/T} km/phut");
         }
 }
-
 }
 
