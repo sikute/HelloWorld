@@ -51,34 +51,6 @@ namespace SIRO.HomeWorks.Day4
 
 
         }
-        void SoGiongNhau1()
-        {
-            string soGiongNhau = "";
-            List<int> temp = new List<int>();
-            int count;
-            for (int i = 0; i < array1.Length; i++)
-            {
-                if (IsNumberChecked(i)) continue;
-                temp.Add(array1[i]);
-                count = 0;
-                for (int j = 0; j < array1.Length; j++)
-                {
-                    if (array1[j] == array1[i] && j != i)
-                    {
-                        temp.Add(array1[j]);
-                        count++;
-                    }
-                }
-                if (count == 0) temp.Remove(array1[i]);
-            }
-            foreach (int child in temp)
-            {
-                soGiongNhau += child + ",";
-            }
-
-            Debug.Log($"so giong nhau la: {soGiongNhau}");
-        }
-
         void SoGiongNhau()
         {
             string str;
