@@ -58,6 +58,7 @@ public class HomeWork : MonoBehaviour
         {
             switch (phepTinh)
             {
+
                 case TONG:
                     Debug.Log($"Tong: {a} + {b} = {a + b}");
                     break;
