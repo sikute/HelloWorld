@@ -33,21 +33,21 @@ namespace SIRO.HomeWorks.Day4
             //SoGiongNhau();
 
             //int[] result = SoGiongNhauReturnValue();
-            //int[] result = SoDuyNhatReturnValue();
-            //string str = "";
-            //foreach (int child in result) 
-            //{
-            //    str += child + ",";
-            //}
-            //Debug.Log(str);
+            int[] result = SoDuyNhatReturnValue();
+            string str = "";
+            foreach (int child in result)
+            {
+                str += child + ",";
+            }
+            Debug.Log(str);
 
-            //SoDuyNhat();
+            SoDuyNhat();
 
             //Calculate();
 
             //Debug.Log(CalculateChanLe(7));
-            Debug.Log(CalculateTongTich(PhepTinh.Tich,array1,null));
-            Debug.Log(CalculateTongTich(PhepTinh.Tich,null,array2));
+            //Debug.Log(CalculateTongTich(PhepTinh.Tich,array1,null));
+            //Debug.Log(CalculateTongTich(PhepTinh.Tich,null,array2));
 
 
         }
@@ -217,29 +217,28 @@ namespace SIRO.HomeWorks.Day4
 
         void SoDuyNhat()
         {
-            //mang 1 chieu
             string soDuyNhat = "";
             int count = 0;
-            for (int i = 0; i < array1.Length; i++)
-            {
-                count = 0;
-                for (int j = 0; j < array1.Length; j++)
-                {
-                    if (array1[j] == array1[i] && i != j)
-                    {
-                        count++;
-                        break;
-                    }
-                }
-                if (count == 0) soDuyNhat += array1[i] + ",";
-            }
-            Debug.Log(soDuyNhat);
+
+            ////mang 1 chieu
+            //for (int i = 0; i < array1.Length; i++)
+            //{
+            //    count = 0;
+            //    for (int j = 0; j < array1.Length; j++)
+            //    {
+            //        if (array1[j] == array1[i] && i != j)
+            //        {
+            //            count++;
+            //            break;
+            //        }
+            //    }
+            //    if (count == 0) soDuyNhat += array1[i] + ",";
+            //}
+            //Debug.Log(soDuyNhat);
 
             //mang 2 chieu
-            soDuyNhat = "";
-                count = 0;
-                int a = 0;
-                int b = 0;
+            int a = 0;
+            int b = 0;
             foreach (int child in array2)
             {
                 b = 0;
@@ -249,45 +248,23 @@ namespace SIRO.HomeWorks.Day4
                     if (temp == child && a != b)
                     {
                         count++;
-                        b++;
-                        Debug.Log(b);
                         break;
                     }
+                    b++;
                 }
                 if (count == 0) soDuyNhat += child + ",";
                 a++;
              }
              Debug.Log(soDuyNhat);
 
-            ////mang 2 chieu
-            //soDuyNhat = "";
-            //count= 0;
-            //int count1 = 0;
-            //foreach (int child in array2)
-            //{
-            //    count1 = 0;
-            //    foreach (int temp in array2)
-            //    {
-            //        if (count1 == array2.Length - 1 && temp == child) soDuyNhat += child + ",";
-            //        if (count1 == count) 
-            //        {
-            //            count1++;
-            //            continue; 
-            //        }
-            //        if (temp == child) break;
-            //        if (count1 == array2.Length - 1) soDuyNhat += child + ",";
-            //        count1++;
-            //    }
-            //    count++;
-
-       
+                   
         }
 
         int[] SoDuyNhatReturnValue()
         {
-            int count = 0;
             int[] resultArray = new int[0] { };
             int index = 0;
+            int count = 0;
 
             ////mang 1 chieu
             //for (int i = 0; i < array1.Length; i++)
@@ -309,7 +286,6 @@ namespace SIRO.HomeWorks.Day4
             //return resultArray;
 
             //mang 2 chieu
-            count = 0;
             int a = 0;
             int b = 0;
             foreach (int child in array2)
@@ -336,7 +312,6 @@ namespace SIRO.HomeWorks.Day4
                 resultArray[index] = child;
             }
             return resultArray;
-
 
         }
 
