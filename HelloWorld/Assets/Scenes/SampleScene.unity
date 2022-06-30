@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 301846442}
   - component: {fileID: 301846443}
+  - component: {fileID: 301846444}
   m_Layer: 0
   m_Name: Day7
   m_TagString: Untagged
@@ -161,9 +162,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301846441}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2615d74c6f3921b44b875c90f33b0e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &301846444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301846441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5727efd5fec7b46a55d395c91f6216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &705507993
