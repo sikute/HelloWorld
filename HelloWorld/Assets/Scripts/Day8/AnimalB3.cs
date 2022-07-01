@@ -9,29 +9,22 @@ namespace SIRO.HomeWorks.Day8.B3
         public string enviroment;
         public string food;
     }
-    public interface IMove
+    public interface IAnimal
     {
         public void Move();
-    }
-    public interface IEat
-    {
         public void Eat();
-    }
-    public interface IEatWhat
-    {
-        public void EatWhat();
-    }
-    public interface ISound
-    {
+        public void Eat(string food);
         public void Sound();
+
+
     }
-    public class Cat : AnimalB3, IMove, IEatWhat, ISound
+    public class Cat : AnimalB3, IAnimal
     {
         public void Move()
         {
             Debug.Log("Di bang bon chan");
         }
-        public void EatWhat()
+        public void Eat()
         {
             Debug.Log("An thit");
         }
@@ -39,14 +32,18 @@ namespace SIRO.HomeWorks.Day8.B3
         {
             Debug.Log("Keu meo meo");
         }
+
+        public void Eat(string food)
+        {
+        }
     }
-    public class Bird: AnimalB3, IMove, IEatWhat,ISound
+    public class Bird: AnimalB3, IAnimal
     {
         public void Move()
         {
             Debug.Log("Bay bang canh");
         }
-        public void EatWhat()
+        public void Eat()
         {
             Debug.Log("An sau bo");
         }
@@ -54,20 +51,28 @@ namespace SIRO.HomeWorks.Day8.B3
         {
             Debug.Log("Hot");
         }
+
+        public void Eat(string food)
+        {
+        }
     }
-    public class Fish : AnimalB3,IMove,IEatWhat,ISound
+    public class Fish : AnimalB3,IAnimal
     {
         public void Move()
         {
             Debug.Log("Boi");
         }
-        public void EatWhat()
+        public void Eat()
         {
             Debug.Log("An tao, sinh vat nho");
         }
         public void Sound()
         {
             Debug.Log("Quay nuoc");
+        }
+
+        public void Eat(string food)
+        {
         }
     }
 }

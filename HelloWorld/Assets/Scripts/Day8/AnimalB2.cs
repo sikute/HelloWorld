@@ -10,7 +10,7 @@ namespace SIRO.HomeWorks.Day8.B2
         public string food;
         public abstract void Move();
         public abstract void Eat();
-        public abstract void EatWhat();
+        public abstract void Eat(string food);
         public abstract void Sound();
     }
 
@@ -20,11 +20,11 @@ namespace SIRO.HomeWorks.Day8.B2
         {
             Debug.Log("Di bang bon chan");
         }
-        public override void Eat()
+        public override void Eat(string food)
         {
             
         }
-        public override void EatWhat()
+        public override void Eat()
         {
             Debug.Log("An thit");
         }
@@ -39,11 +39,11 @@ namespace SIRO.HomeWorks.Day8.B2
         {
             Debug.Log("Bay bang canh");
         }
-        public override void Eat()
+        public override void Eat(string food)
         {
 
         }
-        public override void EatWhat()
+        public override void Eat()
         {
             Debug.Log("An sau bo");
         }
@@ -60,11 +60,11 @@ namespace SIRO.HomeWorks.Day8.B2
         {
             Debug.Log("Boi");
         }
-        public override void Eat()
+        public override void Eat(string food)
         {
 
         }
-        public override void EatWhat()
+        public override void Eat()
         {
             Debug.Log("An tao, sinh vat nho");
         }

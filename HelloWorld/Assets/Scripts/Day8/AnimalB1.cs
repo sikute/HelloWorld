@@ -14,7 +14,7 @@ namespace SIRO.HomeWorks.Day8.B1
         public virtual void Eat()
         {
         }
-        public virtual void EatWhat()
+        public virtual void Eat(string food)
         {
         }
         public virtual void Sound()
@@ -32,6 +32,9 @@ namespace SIRO.HomeWorks.Day8.B1
         {
             Debug.Log("An thit");
         }
+        public override void Eat(string food)
+        {
+        }
         public override void Sound()
         {
             Debug.Log("Keu meo meo");
@@ -47,6 +50,9 @@ namespace SIRO.HomeWorks.Day8.B1
         {
             Debug.Log("An sau bo");
         }
+        public override void Eat(string food)
+        {
+        }
         public override void Sound()
         {
             Debug.Log("Hot");
@@ -61,6 +67,9 @@ namespace SIRO.HomeWorks.Day8.B1
         public override void Eat()
         {
             Debug.Log("An tao, sinh vat nho");
+        }
+        public override void Eat(string food)
+        {
         }
         public override void Sound()
         {
